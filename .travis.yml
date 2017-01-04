@@ -1,4 +1,4 @@
 language: python
 install: "pip install pylint"
 script:
-    - find ./ -name "*.py" | pylint  --errors-only
+    - test.sh
