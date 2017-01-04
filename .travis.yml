@@ -1,5 +1,4 @@
 language: python
 sudo: required
 install: "pip install pylint"
-script:
-    - sudo ./test.sh
+script: "bash test.sh"
