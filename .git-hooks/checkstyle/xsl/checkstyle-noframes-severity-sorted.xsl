@@ -7,7 +7,7 @@
 <!-- Checkstyle XML Style Sheet by Rolf Wojtech <rolf@wojtech.de>                   -->
 <!-- (based on checkstyle-noframe-sorted.xsl by Stephane Bailliez                   -->
 <!--  <sbailliez@apache.org> and sf-patch 1721291 by Leo Liang)                     -->
-<!-- Changes: 																								                      -->
+<!--Changes:                                                                        -->
 <!--  * Outputs seperate columns for error/warning/info                             -->
 <!--  * Sorts primarily by #error, secondarily by #warning, tertiary by #info       -->
 <!--  * Compatible with windows path names (converts '\' to '/' for html anchor)    -->

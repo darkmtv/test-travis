@@ -66,8 +66,8 @@
 
     <xsl:param name="output.dir" select="'.'"/>
 
-	<xsl:variable name="allFiles" select="/checkstyle/file[@name and generate-id(.) = generate-id(key('files', @name))]"/>
-	<xsl:variable name="allFilesWithError" select="/checkstyle/file[@name and generate-id(.) = generate-id(key('errorfiles', @name))]"/>
+        <xsl:variable name="allFiles" select="/checkstyle/file[@name and generate-id(.) = generate-id(key('files', @name))]"/>
+        <xsl:variable name="allFilesWithError" select="/checkstyle/file[@name and generate-id(.) = generate-id(key('errorfiles', @name))]"/>
 
     <xsl:template match="checkstyle">
         <!-- create the index.html -->
