@@ -1,5 +1,5 @@
-language: ruby
-rvm: 2.2
+language: java
+rvm: ruby 2.2
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y checkstyle
