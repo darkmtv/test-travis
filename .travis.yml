@@ -2,5 +2,6 @@ language: ruby
 rvm: 2.2
 install: "gem install overcommit"
 script: 
+  - "overcommit --sign"
   - "cd main"
   - "overcommit --run"
