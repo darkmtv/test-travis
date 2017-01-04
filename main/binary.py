@@ -6,4 +6,4 @@ for test in test_cases:
     test = test.replace('\n', '')
     test = test.split(' ')
     print(test[len(test)-2])
-print 'this is error
+print 'fixed'
