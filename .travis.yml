@@ -2,6 +2,8 @@ language: ruby
 rvm: 2.2
 install: "gem install overcommit"
 script: 
+  - git config -- global user.name "Fluid LA"
+  - git config -- global user.email "fluidtest@la.com"
   - "overcommit --sign"
   - "overcommit --sign pre-commit"
   - "cd main"
