@@ -1,4 +1,5 @@
-language: python
-sudo: required
-install: "pip install pylint"
-script: "bash test.sh"
+language: ruby
+install: "gem install overcommit"
+script: 
+  - "cd main"
+  - "overcommit --run"
