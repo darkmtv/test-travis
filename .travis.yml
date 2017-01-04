@@ -2,7 +2,7 @@ language: ruby
 rvm: 2.2
 before_install:
   - sudo apt-get -qq update
-  - sudp apt-get install -y checkstyle
+  - sudo apt-get install -y checkstyle
 install: 
   - "gem install overcommit"
 script: 
