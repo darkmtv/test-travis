@@ -65,3 +65,4 @@ void main(string[] args)
         findLetter(asciivalues,wordsize,lastchar);
     }
 }
+}
