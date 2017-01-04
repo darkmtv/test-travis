@@ -1,4 +1,4 @@
 language: python
 install: "pip install pylint"
 script:
-    - test.sh
+    - ./test.sh
