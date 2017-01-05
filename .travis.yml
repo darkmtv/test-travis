@@ -5,10 +5,12 @@ before_install:
   - sudo apt-get install -y checkstyle
 install: 
   - "gem install overcommit"
-script: 
+before_script:
   - git config --global user.name "Fluid LA"
   - git config --global user.email "fluidtest@la.com"
-  - "overcommit --sign"
-  - "overcommit --sign pre-commit"
-  - "cd main"
-  - git commit -m "Testing"
+  - overcommit --sign
+  - overcommit --sign pre-commit
+script: 
+  - cd main
+  - git add .
+  - git commit -m "Test this"
