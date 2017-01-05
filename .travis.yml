@@ -11,4 +11,4 @@ script:
   - "overcommit --sign"
   - "overcommit --sign pre-commit"
   - "cd main"
-  - "overcommit --run"
+  - git commit -m "Testing"
