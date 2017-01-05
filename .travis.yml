@@ -12,5 +12,4 @@ before_script:
   - overcommit --sign pre-commit
 script: 
   - cd main
-  - git add .
-  - git commit -m "Test this"
+  - overcommit --run
