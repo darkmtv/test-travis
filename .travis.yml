@@ -11,4 +11,4 @@ script:
   - echo $TRAVIS_PULL_REQUEST
   - echo $TRAVIS_PULL_REQUEST_BRANCH
   - echo $TRAVIS_REPO_SLUG
-  - git diff-tree --no-commit-id --name-only -r "$TRAVIS_COMMIT"
+  - git diff-tree --no-commit-id --name-only -r origin
