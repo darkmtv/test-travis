@@ -1,5 +1,4 @@
 import sys
-
 with open(sys.argv[1], 'r') as test_cases:
     cont = 1
     cont2 = 0
