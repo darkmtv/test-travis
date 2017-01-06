@@ -1,16 +1,9 @@
-language: java
-rvm: ruby 2.2
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y checkstyle
-install: 
-  - "gem install overcommit"
-before_script:
-  - git config --global user.name "Fluid LA"
-  - git config --global user.email "fluidtest@la.com"
-  - overcommit --sign
-  - overcommit --sign pre-commit
-script: 
-  - cd main
-  - git add .
-  - git commit -m "Test this"
+language: python
+python:
+  - "2.7"
+sudo: required
+install:
+  - "pip install pre-commit"
+  - sudo apt-get install -y simhash
+script:
+  - pre-commit run
