@@ -6,5 +6,4 @@ install:
   - "pip install pre-commit"
   - sudo apt-get install -y simhash
 script:
-  - echo $(git diff --name-only HEAD $(git merge-base HEAD master))
   - git diff --name-only HEAD $(git merge-base HEAD master) | xargs pre-commit run --files
