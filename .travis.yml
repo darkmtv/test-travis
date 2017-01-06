@@ -6,5 +6,5 @@ install:
   - "pip install pre-commit"
   - sudo apt-get install -y simhash
 script:
-  - echo $TRAVIS_REPO_SLUG
+  - echo $TRAVIS_COMMIT_RANGE
   - git diff-tree --no-commit-id --name-only -r $TRAVIS_COMMIT
