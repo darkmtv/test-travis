@@ -14,5 +14,5 @@ script:
   - git status
   - git diff-tree --no-commit-id --name-only -r master
   - git diff --name-only --diff-filter=AM FETCH_HEAD...master
-  - git diff --name-only HEAD...master
-  - ls main
+  - git diff --name-only FETCH_HEAD...master
+  - echo $(git diff --name-only HEAD $(git merge-base HEAD master))
