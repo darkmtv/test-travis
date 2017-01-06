@@ -13,3 +13,4 @@ script:
   - echo $TRAVIS_REPO_SLUG
   - git status
   - git diff-tree --no-commit-id --name-only -r master
+  - git diff --name-only --diff-filter=AM HEAD...master
