@@ -6,4 +6,4 @@ install:
   - "pip install pre-commit"
   - sudo apt-get install -y simhash
 script:
-  - git diff-tree --no-commit-id --name-only -r HEAD^ | xargs pre-commit run --files
+  - git diff-tree --no-commit-id --name-only -r HEAD^
