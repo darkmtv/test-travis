@@ -12,3 +12,9 @@
     -   id: name-tests-test
     -   id: requirements-txt-fixer
     -   id: flake8
+-   repo: git://github.com/pre-commit/mirrors-pylint
+    sha: 29c787c152552c93bdc59c45c23a155cb0570feb
+    hooks:
+    -   id: pylint
+        args:
+        - --rcfile=conf/pylintrc
